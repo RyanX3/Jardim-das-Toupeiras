@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {   
+  background: #404040;   
+  -webkit-font-smoothing: antialiased;
+
+}  
+
+:root {   
+  font-size: 62.5%; 
+}  
+
+.container {
+  background-image: url(images/fundo.svg);
+  background-repeat: none;
+  background-size: contain;
+  
+  width: 144rem;
+  height: 102.4rem;
+  margin: auto;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+      
+main {
+
+  display: grid;
+  grid-template-areas: 
+  'A B C D'
+  'A B C D'
+  'A B C D';
+  grid-gap: 4.5rem;
+
+  padding: 23rem 16.7rem 18.7rem 16.7rem;
+}
+
+.mole {
+  position: relative;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7, .img8, .img9, .img10, .img11, .img12 {
+ position: absolute;
+  width: 22rem;
+  
+  height: 100%;
+}
+
+.img1:hover {
+  animation: mole 800ms infinite;
+  cursor: pointer;
+}
+.img2:hover {
+  animation: mole 800ms infinite;
+}
+.img3 {
+  background-image: url(images/toupeira2.svg);
+  cursor: pointer;
+}
+.img4:hover  {
+  animation: mole 800ms;
+  cursor: pointer;
+}
+.img5 {
+  background-image: url(images/toupeira3.svg);
+  cursor: pointer;
+}
+.img6:hover{
+  animation: mole 800ms infinite;
+  cursor: pointer;
+}
+.img7:hover  {
+  animation: mole 800ms infinite;
+  cursor: pointer;
+}
+.img8:hover   {
+  animation: mole 800ms infinite;
+  cursor: pointer;
+}
+.img9:hover   {
+  animation: mole 800ms infinite;
+  cursor: pointer;
+}
+.img10:hover   {
+  animation: mole 800ms infinite;
+  cursor: pointer;
+}
+.img11:hover  {
+  animation: mole 800ms;
+  cursor: pointer;
+}
+.img12 {
+  background-image: url(images/toupeira5.svg);
+  cursor: pointer;
+}
+
+@keyframes mole {
+  0% {
+    transform: translateY(0);
+    background-image: url(images/toupeira6.svg);
+  }
+
+  20% {
+  transform: translateY(0);
+  background-image: url(images/toupeira1.svg);
+  }
+
+  40% {
+    transform: translateY(0);
+    background-image: url(images/toupeira2.svg);
+  }
+
+  60% {
+    transform: translateY(0);
+    background-image: url(images/toupeira3.svg);
+  }
+
+  80% {
+    transform: translateY(0);
+    background-image: url(images/toupeira4.svg);
+  }
+
+  100% {
+    transform: translateY(0);
+    background-image: url(images/toupeira5.svg);
+  }
+}
+
+
